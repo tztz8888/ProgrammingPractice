@@ -1,8 +1,10 @@
-import java.util.List;
-import java.util.ArrayList;
-
-public class Solution {
-	public static int lengthOfLongestSubstring(String s) {
+package src;
+/**
+ *
+ * @author venceWEN
+ */
+public class LengthOfLongestSubstring {
+    public int lengthOfLongestSubstring(String s) {
         int i,index;
         String subs="";
         int maxLen=0;
@@ -26,11 +28,10 @@ public class Solution {
         }
 		return maxLen;
     }
-	
-    	
-    public static void main(String[] args)
+    
+    public void test()
     {
-    	String s="pwwkew";
+        String s="pwwkew";
     	System.out.println("result: "+ lengthOfLongestSubstring(s));
     }
 }
